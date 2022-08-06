@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TheLightStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9b37ba7307.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="back">
+    <div class="navbar">
+        <nav>
+        <img src="Menu.png" class="menu" onclick="togglemenu()">
+        <img src="logo.png" class="logo">
+        <h1 class="logo-text">TheLightStore</h1>
+        
+            <ul id="menuList">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Lights</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>    
+    </div>
+    <div class="text-content">
+        <h1 class="small-text">Prefect Synergy of </h1>
+        <h1 class="text">Classic & Modern.</h1>
+        <a href="">Check All Collections</a>
+    </div>
+    <div class="container">
+        <div class="light">
+            <img src="lights.jpg">
+        </div>
+    <div class="lamp-text">
+        <h3>Premium lights <br> for your Home</h3>
+        <p>Illumination fixtures are the key finishing touches 
+        in enhancing <br>the aesthetic of your interior design and 
+         creating</p>
+         <a href=""> Shop Now</a>
+    </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="col-1">
+                <h3>USEFULL LINKS</h3>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <a href="#">Shop</a>
+                <a href="#">Lights</a>
+            </div>
+            <div class="col-2">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <br>
+                    <button type="submit">SUBSCRIBE NOW</button>
+                </form>
+            </div>
+            <div class="col-3">
+                <h3>CONTACT</h3>
+                <p>83/G, Vajira Road <br>Kelaniya, Sri Lanka</p>
+                <p>076 871 9021</p>
+            
+            <div class="social-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px";
+                }    
+        }
+
+    </script>
+   
+
+</body>
+</html>
